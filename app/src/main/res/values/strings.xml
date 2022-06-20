@@ -15,7 +15,10 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="kakrola_dwarka_delhi_110078">Kakrola, Dwarka ,Delhi 110078</string>
-    <string name="_3_offers">3 OFFERS</string>
+    <string name="_3_offers">3 dOFFERS</string>
+    <string name="_3_odffers">3 dfOFFERS</string>
+    <string name="_3_offedrs">3 dsfOFFERS</string>
+
     <string name="_2_bed_sharing">2 Bed Sharing</string>
     <string name="mess_food">MESS FOOD</string>
     <string name="enter_your_destination">Enter your destination</string>
