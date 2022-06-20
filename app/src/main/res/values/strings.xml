@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Chatapp_Clone</string>
+    <string name="whatsapp_will_send_sms_to_verify_your_phone_number">Whatsapp will send SMS to verify your phone number</string>
+    <string name="verify_your_phone_number">Verify Your Phone Number</string>
+    <string name="enter_the_to_verify_your_phone_number">Enter the to verify your phone number</string>
+    <string name="enter_the_otp_verify_your_phone_number">enter_the_OTP_verify_your_phone_number</string>
+    <string name="verify_917827563402">Verify +917827563402</string>
+    <string name="welcome_to_housetelers">Welcome To HouseTelers</string>
+    <string name="book_p_g_or_hostel_at_your_convenience">Book P.G. or Hostel at your convenience</string>
+    <string name="library">Library</string>
+    <string name="search">Search</string>
+    <string name="profile">Profile</string>
+    <string name="maps">Maps</string>
+    <string name="list">List</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="kakrola_dwarka_delhi_110078">Kakrola, Dwarka ,Delhi 110078</string>
+    <string name="_3_offers">3 OFFERS</string>
+    <string name="_2_bed_sharing">2 Bed Sharing</string>
+    <string name="mess_food">MESS FOOD</string>
+    <string name="enter_your_destination">Enter your destination</string>
+</resources>

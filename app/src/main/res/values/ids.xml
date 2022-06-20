@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="textView4" type="id" />
+    <item name="tabLayout" type="id" />
+    <item name="maps" type="id" />
+    <item name="list" type="id" />
+    <item name="cardView5" type="id" />
+    <item name="bottomNav" type="id" />
+    <item name="frame" type="id" />
+    <item name="imageView2" type="id" />
+</resources>
