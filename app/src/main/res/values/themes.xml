@@ -14,4 +14,10 @@
         <!-- Customize your theme here. -->
         <item name="android:windowFullscreen">true</item>
     </style>
+    <style name="nightModeswitch" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">#1327A6</item>
+        <item name="colorSwitchThumbNormal">#7B6628</item>
+        <item name="android:foreground">#511010</item>
+
+    </style>
 </resources>

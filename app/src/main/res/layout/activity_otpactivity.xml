@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:foregroundTint="#5AB45A"
     android:foregroundTintMode="multiply"
-    tools:context=".OTPActivity">
+    tools:context=".beforeMain.OTPActivity">
 
     <ImageView
         android:id="@+id/imageView"
@@ -63,56 +63,39 @@
             android:layout_height="match_parent"
             android:elevation="20dp">
 
-<!--            <com.mukesh.OtpView-->
-<!--                android:id="@+id/otp_view"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="match_parent"-->
-<!--                android:layout_marginStart="20dp"-->
-<!--                android:layout_marginTop="10dp"-->
-<!--                android:layout_marginEnd="20dp"-->
-<!--                android:layout_marginBottom="60dp"-->
-<!--                android:hint=""-->
-<!--                android:inputType="number"-->
-<!--                android:itembackground="@color/grey"-->
-<!--                android:textColor="@android:color/white"-->
-<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            <com.chaos.view.PinView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="60dp"-->
+<!--                app:layout_constraintBottom_toTopOf="@+id/button2"-->
 <!--                app:layout_constraintEnd_toEndOf="parent"-->
 <!--                app:layout_constraintStart_toStartOf="parent"-->
-<!--                app:layout_constraintTop_toTopOf="parent"-->
-<!--                app:OtpItemCount="6"-->
-<!--                app:OtpLineColor="@color/colorPrimary"-->
-<!--                app:OtpViewType="line" />-->
-
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginTop="72dp"-->
-<!--                android:hint="en"-->
+<!--                android:hint="@string/_5_3_2_5"-->
 <!--                android:inputType="number"-->
-<!--                app:layout_constraintEnd_toEndOf="@+id/textView"-->
-<!--                android:itembackground:"@color/grey"-->
-<!--                app:otpItemCount="6"-->
-<!--                app:otpViewType="line"-->
-<!--                app:otpLineColor="6"-->
+<!--                android:elevation="10dp"-->
+<!--                android:textColor="@color/green"-->
+<!--                app:itemHeight="60dp"-->
+<!--                app:itemWidth="50dp"-->
+<!--                app:itemRadius="10dp"-->
+<!--                app:itemSpacing="10dp"-->
+<!--                app:viewType="rectangle"-->
+<!--                app:lineColor="@color/black"-->
+<!--                android:itemBackground="@color/material_dynamic_secondary80"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
 
-<!--            app:layout_constraintHorizontal_bias="0.443"-->
-<!--                app:layout_constraintStart_toStartOf="@+id/textView"-->
-<!--                app:layout_constraintTop_toBottomOf="@+id/textView"-->
-<!--                    />-->
             <Button
                 android:id="@+id/button2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
-                android:background="@drawable/round_btn"
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="30dp"
+                android:background="@drawable/round_btn"
                 android:backgroundTint="#38B9A4"
                 android:text="Button"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+                app:layout_constraintStart_toStartOf="parent"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>

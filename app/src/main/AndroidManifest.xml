@@ -14,10 +14,13 @@
         android:theme="@style/Theme.Chatapp_Clone"
         tools:targetApi="31">
         <activity
+            android:name=".Login_signup"
+            android:exported="false" />
+        <activity
             android:name=".DetailPageActivity"
             android:exported="false" />
         <activity
-            android:name=".SplashScreen"
+            android:name=".beforeMain.SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,14 +29,18 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".OTPActivity"
+            android:name=".beforeMain.OTPActivity"
             android:exported="false" />
         <activity
-            android:name=".PhoneNumberActivity"
-            android:exported="false"></activity>
+            android:name=".beforeMain.PhoneNumberActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

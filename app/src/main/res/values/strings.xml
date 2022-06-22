@@ -22,4 +22,11 @@
     <string name="_2_bed_sharing">2 Bed Sharing</string>
     <string name="mess_food">MESS FOOD</string>
     <string name="enter_your_destination">Enter your destination</string>
+    <string name="_5_3_2_5">5 3 2 5</string>
+    <string name="hello_ayush_kumar">Hello Ayush Kumar</string>
+    <string name="explore_today_s_feed">Explore Today\'s Feed</string>
+    <string name="signup">Signup</string>
+    <string name="login">Login</string>
+    <string name="home">Home</string>
+    <string name="setting">Setting</string>
 </resources>

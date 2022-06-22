@@ -8,4 +8,5 @@
     <item name="bottomNav" type="id" />
     <item name="frame" type="id" />
     <item name="imageView2" type="id" />
+    <item name="setting" type="id" />
 </resources>

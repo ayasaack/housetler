@@ -6,112 +6,170 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <me.ibrahimsn.lib.SmoothBottomBar
+            android:id="@+id/bottomNav"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="40dp"
+            android:contentDescription="@string/app_name"
+            app:backgroundColor="#D9852D"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/bottom_menu" />
 
+        <FrameLayout
+            android:id="@+id/frame"
+            android:layout_width="409dp"
+            android:layout_height="681dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/bottomNav"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView5">
 
-            <com.google.android.material.tabs.TabLayout
-                android:id="@+id/tabLayout"
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycle"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                android:layout_height="match_parent" />
+        </FrameLayout>
 
-                <com.google.android.material.tabs.TabItem
-                    android:id="@+id/maps"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/maps" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+<!--        <androidx.constraintlayout.utils.widget.ImageFilterButton-->
+<!--            android:id="@+id/sorts"-->
+<!--            android:layout_width="40dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_marginStart="8dp"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:backgroundTint="#fff"-->
+<!--            android:scaleType="centerInside"-->
+<!--            android:src="@drawable/sides"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
 
-                <com.google.android.material.tabs.TabItem
-                    android:id="@+id/list"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/list" />
-
-
-            </com.google.android.material.tabs.TabLayout>
-
-            <me.ibrahimsn.lib.SmoothBottomBar
-                android:id="@+id/bottomNav"
-                android:layout_width="match_parent"
-                android:layout_height="70dp"
-                app:backgroundColor="@color/black"
-                android:contentDescription="@string/app_name"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:menu="@menu/bottom_menu" />
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardView5"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:background="#7F87D0DA"
-                app:cardBackgroundColor="#A8A6BEDD"
-                app:cardCornerRadius="20dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
-                <!--                app:layout_constraintTop_toBottomOf="@+id/tabLayout">-->
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:id="@+id/textView4"
-                        android:layout_width="200dp"
-                        android:layout_height="40dp"
-                        android:layout_marginTop="5dp"
-                        android:elevation="20dp"
-                        android:text="@string/enter_your_destination"
-                        android:textSize="20sp"
-                        android:textStyle="bold|italic"
-
-                        app:circularflow_radiusInDP="40dp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <ImageView
-                    android:id="@+id/imageView2"
-                    android:layout_width="59dp"
-                    android:layout_height="46dp"
-                    android:layout_marginEnd="37dp"
-                    android:layout_marginBottom="4dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/textView4"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="?android:attr/actionModeWebSearchDrawable" />
+<!--        <TextView-->
+<!--            android:id="@+id/hello"-->
+<!--            android:layout_width="280dp"-->
+<!--            android:layout_height="30dp"-->
 
 
-            </androidx.cardview.widget.CardView>
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:fontFamily="@font/roboto_medium"-->
+<!--            android:text="@string/hello_ayush_kumar"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintEnd_toStartOf="@+id/profile"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/sorts"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
 
-            <FrameLayout
-                android:id="@+id/frame"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                app:layout_constraintBottom_toTopOf="@+id/bottomNav"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/cardView5" >
+<!--        <androidx.constraintlayout.utils.widget.ImageFilterButton-->
+<!--            android:id="@+id/profile"-->
+<!--            android:layout_width="40dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:layout_marginEnd="8dp"-->
+<!--            android:backgroundTint="#fff"-->
+<!--            android:cropToPadding="true"-->
+<!--            android:scaleType="centerInside"-->
+<!--            android:src="@drawable/profile"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    tools:listitem="@layout/look"
-                    android:id="@+id/recycle"
-                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
-            </FrameLayout>
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/cardView5"-->
+<!--            android:layout_width="330dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_marginStart="15dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:background="#7F87D0DA"-->
+<!--            app:cardBackgroundColor="#A8A6BEDD"-->
+<!--            app:cardCornerRadius="7dp"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/explore">-->
+<!--            &lt;!&ndash;                app:layout_constraintTop_toBottomOf="@+id/tabLayout">&ndash;&gt;-->
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
+<!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent">-->
 
+<!--                <TextView-->
+<!--                    android:id="@+id/textView4"-->
+<!--                    android:layout_width="200dp"-->
+<!--                    android:layout_height="25dp"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:elevation="20dp"-->
+<!--                    android:text="@string/enter_your_destination"-->
+<!--                    android:textSize="20sp"-->
+<!--                    android:textStyle="bold|italic"-->
+
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/imageView2"-->
+<!--                    android:layout_width="30dp"-->
+<!--                    android:layout_height="35dp"-->
+<!--                    android:layout_marginStart="9dp"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent"-->
+<!--                    app:srcCompat="?android:attr/actionModeWebSearchDrawable" />-->
+<!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/explore"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:layout_marginEnd="20dp"-->
+<!--            android:fontFamily="@font/roboto_black"-->
+<!--            android:text="@string/explore_today_s_feed"-->
+<!--            android:textColor="#A8000000"-->
+<!--            android:textSize="25sp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.0"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/hello" />-->
+
+<!--        <androidx.constraintlayout.utils.widget.ImageFilterButton-->
+<!--            android:id="@+id/sort"-->
+<!--            android:layout_width="40dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:backgroundTint="#D9852D"-->
+<!--            android:scaleType="centerInside"-->
+<!--            android:src="@drawable/sorts"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.5"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/cardView5"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/cardView5" />-->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:id="@+id/constraintLayout2"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent" />-->
+
+<!--        <FrameLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:id="@+id/frame"-->
+<!--            app:layout_constraintBottom_toTopOf="@+id/bottomNav"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/cardView5" >-->
+
+<!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:id="@+id/recycle"/>-->
+<!--        </FrameLayout>-->
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
