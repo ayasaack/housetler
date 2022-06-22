@@ -8,6 +8,7 @@ import android.os.Bundle;
 import com.example.chatapp_clone.Frag.HomeFrag;
 import com.example.chatapp_clone.Frag.LibraryFrag;
 import com.example.chatapp_clone.Frag.SearchFrag;
+import com.example.chatapp_clone.Frag.SettingFrag;
 import com.example.chatapp_clone.databinding.ActivityMainBinding;
 
 import me.ibrahimsn.lib.OnItemSelectedListener;
@@ -46,6 +47,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 2:
                         getSupportFragmentManager().beginTransaction().replace(R.id.frame, new LibraryFrag()).commit();
+                        break;
+                    case 3:
+                        getSupportFragmentManager().beginTransaction().replace(R.id.frame, new SettingFrag()).commit();
                         break;
                 }
                 return false;

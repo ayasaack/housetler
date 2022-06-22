@@ -77,15 +77,15 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/round_btn"
-        android:backgroundTint="#38B9A4"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="392dp" />
+        android:backgroundTint="#E2812E"
+        android:drawableRight="@drawable/forward"
+        android:paddingRight="5dp"
+        android:text="Generate OTP"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"

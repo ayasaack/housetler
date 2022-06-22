@@ -9,8 +9,8 @@
     tools:context=".beforeMain.SplashScreen">
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="100dp"
         android:layout_marginStart="135dp"
         android:layout_marginTop="53dp"
         android:layout_marginEnd="147dp"
@@ -49,32 +49,20 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:elevation="20dp">
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_btn"
+        android:backgroundTint="#E2812E"
+        android:drawableRight="@drawable/forward"
+        android:paddingRight="5dp"
+        android:text="ENTER APP"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.968"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp" />
 
 
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="24dp"
-                android:layout_marginEnd="30dp"
-                android:background="@drawable/round_btn"
-                android:backgroundTint="#E2812E"
-                android:text="ENTER APP"
-                android:layout_marginBottom="30dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextPhone"
-                android:drawableRight="@drawable/forward"
-                android:paddingRight="5dp"
-                    />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
-  </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
